@@ -1,0 +1,7 @@
+transaction_id,customer_id,customer_name,age,gender,city,product_category,quantity,unit_price,transaction_amount,payment_method,transaction_date,delivery_status,email_address,loyalty_member
+t05027,c1027,bilal noor,,female,islamabad,clothing,1.0,,,bank transfer,3/14/2025,pending,bilal.noor27@example.com,no
+t05028,c1028,uzma farooq,38.0,male,mardan,clothing,6.0,,,card,3/9/2025,delivered,uzma.farooq28@example.com,n
+t05072,c1072,ayesha shah,38.0,female,,electronics,,,,mobile wallet,3/11/2025,,ayesha.shah72@example.com,y
+t05075,c1075,sana khan,49.0,female,rawalpindi,clothing,,304.2,,card,3/26/2025,returned,sana.khan75@example.com,no
+t05083,c1083,iqra rehman,45.0,male,faisalabad,sports,,319.71,,mobile wallet,4/9/2025,pending,iqra.rehman83@example.com,no
+t05088,c1088,naveed raza,46.0,male,peshawar,books,,258.14,,card,2/13/2025,pending,naveed.raza88@example.com,yes

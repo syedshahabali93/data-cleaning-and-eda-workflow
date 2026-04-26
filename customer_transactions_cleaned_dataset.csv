@@ -1,0 +1,119 @@
+transaction_id,customer_id,customer_name,age,gender,city,product_category,quantity,unit_price,transaction_amount,payment_method,transaction_date,delivery_status,email_address,loyalty_member
+t05001,c1001,fatima ahmed,36.0,male,peshawar,groceries,6.0,53.3,319.8,cash,4/19/2025,delivered,fatima.ahmed1@example.com,yes
+t05002,c1002,bilal malik,33.0,male,mardan,groceries,6.0,295.25,1771.5,mobile wallet,2/26/2025,returned,bilal.malik2@example.com,no
+t05003,c1003,ali anwar,29.0,female,faisalabad,clothing,2.0,103.17,206.34,bank transfer,1/27/2025,delivered,ali.anwar3@example.com,no
+t05004,c1004,fatima raza,41.0,female,lahore,sports,4.0,245.01,980.04,mobile wallet,1/21/2025,in transit,fatima.raza4@example.com,yes
+t05005,c1005,zara javed,,male,karachi,electronics,6.0,108.73,652.38,bank transfer,1/21/2025,pending,zara.javed5@example.com,yes
+t05006,c1006,omar butt,48.0,female,islamabad,clothing,3.0,100.6,301.8,bank transfer,1/19/2025,in transit,omar.butt6@example.com,yes
+t05007,c1007,uzma farooq,34.0,male,abbottabad,home & living,3.0,445.37,1336.11,card,3/25/2025,delivered,uzma.farooq7@example.com,yes
+t05008,c1008,ayesha anwar,39.0,female,multan,electronics,2.0,411.61,823.22,bank transfer,24/02/2025,returned,ayesha.anwar8@example.com,no
+t05009,c1009,saad shah,35.0,male,peshawar,sports,5.0,246.23,1231.15,mobile wallet,13-apr-25,cancelled,saad.shah9@example.com,yes
+t05010,c1010,hassan noor,50.0,male,lahore,beauty,1.0,75.56,75.56,card,4/19/2025,in transit,,yes
+t05011,c1011,omar hussain,57.0,female,,clothing,5.0,388.46,1942.3,cash,1/30/2025,in transit,omar.hussain11@example.com,no
+t05012,c1012,mariam khan,37.0,female,islamabad,home & living,1.0,429.59,429.59,bank transfer,5/9/2025,pending,mariam.khan12@example.com,yes
+t05013,c1013,kiran rehman,51.0,male,islamabad,clothing,2.0,246.41,492.82,cash,3/24/2025,returned,,yes
+t05014,c1014,fatima javed,42.0,female,peshawar,electronics,2.0,396.08,792.16,cash,1/22/2025,returned,fatima.javed14@example.com,yes
+t05015,c1015,uzma anwar,27.0,male,abbottabad,books,2.0,125.16,250.32,mobile wallet,2/24/2025,in transit,uzma.anwar15@example.com,yes
+t05016,c1016,kiran hussain,42.0,female,mardan,home & living,1.0,117.57,117.57,,28/03/2025,delivered,kiran.hussain16@example.com,yes
+t05017,c1017,waqas malik,19.0,male,lahore,groceries,1.0,408.2,408.2,bank transfer,1/19/2025,in transit,waqas.malik17@example.com,yes
+t05018,c1018,junaid yousaf,50.0,male,mardan,groceries,6.0,421.5,2529.0,,3/4/2025,returned,junaid.yousaf18@example.com,no
+t05019,c1019,imran khan,25.0,female,faisalabad,home & living,4.0,214.42,857.68,cash,1/26/2025,delivered,imran.khan19@example.com,no
+t05020,c1020,mariam anwar,25.0,male,peshawar,groceries,5.0,206.29,1031.45,mobile wallet,2/16/2025,cancelled,mariam.anwar20@example.com,no
+t05021,c1021,iqra rehman,23.0,female,mardan,electronics,1.0,296.25,296.25,cash,1/24/2025,pending,iqra.rehman21@example.com,yes
+t05022,c1022,rabia siddiqui,49.0,male,rawalpindi,electronics,2.0,175.51,351.02,mobile wallet,3/9/2025,returned,rabia.siddiqui22@example.com,no
+t05023,c1023,rabia farooq,54.0,female,islamabad,groceries,3.0,104.22,312.66,cash,5/19/2025,delivered,rabia.farooq23@example.com,no
+t05024,c1024,ayesha ahmed,56.0,female,mardan,beauty,5.0,77.59,387.95,cash,2/17/2025,delivered,ayesha.ahmed24@example.com,yes
+t05025,c1025,iqra hussain,26.0,female,lahore,books,1.0,193.3,193.3,bank transfer,3/8/2025,pending,iqra.hussain25@example.com,no
+t05026,c1026,iqra butt,44.0,male,multan,home & living,3.0,418.63,1255.89,cash,1/3/2025,returned,iqra.butt26@example.com,yes
+t05029,c1029,uzma shah,36.0,female,peshawar,sports,3.0,97.99,293.97,bank transfer,5/10/2025,returned,uzma.shah29@example.com,no
+t05030,c1030,ayesha khan,46.0,female,lahore,electronics,3.0,348.83,1046.49,bank transfer,2/11/2025,returned,ayesha.khan30@example.com,no
+t05031,c1031,uzma ahmed,26.0,male,islamabad,books,1.0,376.89,376.89,card,21/04/2025,pending,uzma.ahmed31@example.com,yes
+t05032,c1032,kiran raza,21.0,female,peshawar,sports,2.0,302.78,605.56,bank transfer,4/15/2025,in transit,kiran.raza32@example.com,yes
+t05033,c1033,iqra rehman,29.0,male,rawalpindi,electronics,2.0,333.56,667.12,bank transfer,4/16/2025,pending,iqra.rehman33@example.com,no
+t05034,c1034,hina anwar,25.0,female,lahore,beauty,4.0,106.32,425.28,mobile wallet,3/31/2025,cancelled,hina.anwar34@example.com,yes
+t05035,c1035,iqra ahmed,31.0,female,faisalabad,clothing,1.0,435.36,435.36,bank transfer,3/31/2025,in transit,iqra.ahmed35@example.com,no
+t05036,c1036,uzma raza,20.0,male,multan,groceries,5.0,433.44,2167.2,bank transfer,1/10/2025,delivered,uzma.raza36@example.com,no
+t05037,c1037,naveed farooq,39.0,female,mardan,electronics,4.0,405.58,1622.32,card,3/7/2025,delivered,naveed.farooq37@example.com,no
+t05038,c1038,ali noor,53.0,male,faisalabad,home & living,1.0,427.4,427.4,bank transfer,3/22/2025,delivered,ali.noor38@example.com,no
+t05039,c1039,tariq butt,45.0,female,rawalpindi,sports,3.0,253.05,759.15,card,4/18/2025,returned,tariq.butt39@example.com,yes
+t05040,c1040,zara iqbal,38.0,female,mardan,beauty,1.0,142.31,142.31,card,4/21/2025,in transit,zara.iqbal40@example.com,no
+t05041,c1041,saad siddiqui,47.0,male,mardan,home & living,6.0,83.0,498.0,cash,3/14/2025,in transit,saad.siddiqui41@example.com,no
+t05042,c1042,bilal rehman,34.0,female,peshawar,beauty,2.0,73.13,146.26,cash,3/4/2025,returned,bilal.rehman42@example.com,yes
+t05043,c1043,saad hussain,55.0,male,rawalpindi,home & living,4.0,115.84,463.36,cash,1/28/2025,returned,saad.hussain43@example.com,yes
+t05044,c1044,hina anwar,52.0,male,lahore,books,2.0,413.52,827.04,cash,4/27/2025,pending,hina.anwar44@example.com,no
+t05045,c1045,tariq noor,,female,abbottabad,books,6.0,402.27,2413.62,mobile wallet,5/21/2025,returned,tariq.noor45@example.com,yes
+t05046,c1046,sana siddiqui,35.0,male,multan,beauty,5.0,222.19,1110.95,card,3/12/2025,returned,sana.siddiqui46@example.com,yes
+t05047,c1047,kiran malik,36.0,female,faisalabad,books,1.0,69.16,69.16,card,4/9/2025,pending,kiran.malik47@example.com,yes
+t05048,c1048,bilal hussain,,female,mardan,home & living,4.0,35.52,142.08,mobile wallet,4/10/2025,in transit,bilal.hussain48@example.com,yes
+t05049,c1049,waqas hussain,49.0,male,faisalabad,clothing,4.0,385.22,1540.88,,5/18/2025,in transit,waqas.hussain49@example.com,yes
+t05050,c1050,sana malik,36.0,female,abbottabad,electronics,4.0,156.57,626.28,,2/12/2025,returned,sana.malik50@example.com,yes
+t05051,c1051,zara noor,20.0,female,lahore,electronics,6.0,197.45,1184.7,mobile wallet,2/16/2025,delivered,zara.noor51@example.com,no
+t05052,c1052,omar raza,32.0,female,faisalabad,clothing,4.0,130.99,523.96,mobile wallet,3/6/2025,delivered,omar.raza52@example.com,no
+t05053,c1053,ali farooq,53.0,male,faisalabad,groceries,6.0,38.33,229.98,cash,1/8/2025,pending,ali.farooq53@example.com,yes
+t05054,c1054,ali iqbal,28.0,male,islamabad,home & living,6.0,58.56,351.36,card,4/30/2025,cancelled,ali.iqbal54@example.com,no
+t05055,c1055,hina iqbal,57.0,male,islamabad,clothing,1.0,263.78,263.78,bank transfer,4/7/2025,returned,hina.iqbal55@example.com,yes
+t05056,c1056,bilal iqbal,,male,multan,beauty,6.0,273.38,1640.28,cash,1/11/2025,cancelled,bilal.iqbal56@example.com,no
+t05057,c1057,naveed khan,51.0,female,lahore,beauty,4.0,371.47,1485.88,cash,4/21/2025,,naveed.khan57@example.com,no
+t05058,c1058,hassan hussain,30.0,female,mardan,beauty,4.0,213.47,853.88,bank transfer,24-mar-25,pending,hassan.hussain58@example.com,no
+t05059,c1059,junaid javed,47.0,male,abbottabad,books,5.0,303.34,1516.7,bank transfer,1/8/2025,returned,junaid.javed59@example.com,no
+t05060,c1060,hina siddiqui,32.0,female,multan,clothing,3.0,397.1,1191.3,bank transfer,1/3/2025,in transit,hina.siddiqui60@example.com,yes
+t05061,c1061,bilal malik,45.0,female,mardan,beauty,2.0,313.25,626.5,mobile wallet,4/25/2025,delivered,bilal.malik61@example.com,yes
+t05062,c1062,kiran malik,44.0,male,multan,sports,5.0,171.11,855.55,bank transfer,4/19/2025,in transit,kiran.malik62@example.com,no
+t05063,c1063,naveed farooq,48.0,female,multan,clothing,2.0,61.33,122.66,card,3/22/2025,delivered,naveed.farooq63@example.com,yes
+t05064,c1064,imran malik,49.0,female,mardan,books,3.0,441.39,1324.17,card,3/17/2025,pending,,no
+t05065,c1065,hina butt,19.0,male,multan,electronics,4.0,252.58,1010.32,card,5/6/2025,delivered,hina.butt65@example.com,yes
+t05066,c1066,waqas butt,49.0,female,abbottabad,clothing,2.0,434.75,869.5,bank transfer,5/3/2025,,waqas.butt66@example.com,yes
+t05067,c1067,omar siddiqui,23.0,male,islamabad,groceries,5.0,427.51,2137.55,cash,3/5/2025,delivered,omar.siddiqui67@example.com,no
+t05068,c1068,zara iqbal,58.0,male,mardan,home & living,4.0,409.56,1638.24,bank transfer,4/20/2025,cancelled,zara.iqbal68@example.com,yes
+t05069,c1069,zara farooq,25.0,female,peshawar,clothing,6.0,43.88,263.28,card,2/14/2025,in transit,zara.farooq69@example.com,yes
+t05070,c1070,hina ahmed,45.0,female,abbottabad,clothing,1.0,110.31,110.31,bank transfer,4/27/2025,delivered,hina.ahmed70@example.com,yes
+t05071,c1071,junaid anwar,56.0,male,rawalpindi,electronics,5.0,107.37,536.85,card,10/3/2025,pending,junaid.anwar71@example.com,yes
+t05073,c1073,saad khan,57.0,male,rawalpindi,sports,3.0,274.84,824.52,cash,1/24/2025,pending,saad.khan73@example.com,yes
+t05074,c1074,junaid iqbal,21.0,male,abbottabad,books,6.0,203.47,1220.82,bank transfer,2/16/2025,in transit,junaid.iqbal74@example.com,no
+t05076,c1076,kiran yousaf,44.0,male,abbottabad,electronics,3.0,119.56,358.68,cash,4/14/2025,in transit,kiran.yousaf76@example.com,yes
+t05077,c1077,uzma siddiqui,45.0,male,peshawar,books,3.0,283.2,849.6,mobile wallet,4/24/2025,delivered,uzma.siddiqui77@example.com,yes
+t05078,c1078,junaid noor,27.0,female,abbottabad,sports,4.0,61.67,246.68,card,2/10/2025,cancelled,junaid.noor78@example.com,yes
+t05079,c1079,uzma hussain,24.0,male,,home & living,1.0,294.29,294.29,card,5/8/2025,cancelled,uzma.hussain79@example.com,no
+t05080,c1080,rabia rehman,49.0,female,peshawar,home and living,5.0,71.93,359.65,card,5/11/2025,pending,rabia.rehman80@example.com,yes
+t05081,c1081,junaid anwar,45.0,female,mardan,clothing,1.0,133.01,133.01,,5/6/2025,pending,junaid.anwar81@example.com,no
+t05082,c1082,uzma siddiqui,41.0,female,mardan,beauty,5.0,174.73,873.65,bank transfer,2/18/2025,pending,uzma.siddiqui82@example.com,no
+t05084,c1084,ayesha shah,51.0,female,karachi,beauty,4.0,52.07,208.28,mobile wallet,1/4/2025,pending,,no
+t05085,c1085,hassan khan,49.0,female,faisalabad,books,6.0,183.69,1102.14,cash,3/26/2025,in transit,hassan.khan85@example.com,no
+t05086,c1086,mariam yousaf,50.0,male,karachi,groceries,6.0,310.5,1863.0,bank transfer,2/28/2025,delivered,mariam.yousaf86@example.com,no
+t05087,c1087,fatima anwar,25.0,female,islamabad,sports,3.0,407.31,1221.93,cash,3/25/2025,delivered,fatima.anwar87@example.com,no
+t05089,c1089,zara rehman,43.0,male,abbottabad,books,2.0,110.63,221.26,,4/28/2025,cancelled,zara.rehman89@example.com,yes
+t05090,c1090,saad javed,37.0,male,karachi,home & living,3.0,444.54,1333.62,bank transfer,4/19/2025,cancelled,saad.javed90@example.com,no
+t05091,c1091,kiran malik,43.0,female,karachi,groceries,4.0,260.79,1043.16,bank transfer,3/17/2025,delivered,kiran.malik91@example.com,no
+t05092,c1092,junaid ahmed,55.0,male,,beauty,3.0,350.88,1052.64,card,4/1/2025,pending,junaid.ahmed92@example.com,yes
+t05093,c1093,zara butt,27.0,male,lahore,clothing,4.0,22.75,91.0,bank transfer,2/3/2025,delivered,zara.butt93@example.com,no
+t05094,c1094,mariam farooq,45.0,male,peshawar,groceries,5.0,395.4,1977.0,bank transfer,5/16/2025,in transit,mariam.farooq94@example.com,yes
+t05095,c1095,hina butt,49.0,female,faisalabad,beauty,1.0,215.0,215.0,cash,2/6/2025,pending,hina.butt95@example.com,no
+t05096,c1096,uzma raza,24.0,female,lahore,clothing,5.0,62.63,313.15,bank transfer,3/9/2025,in transit,uzma.raza96@example.com,no
+t05097,c1097,naveed khan,33.0,female,lahore,books,5.0,152.98,764.9,card,1/17/2025,returned,naveed.khan97@example.com,no
+t05098,c1098,rabia khan,27.0,male,lahore,clothing,4.0,59.33,237.32,card,5/18/2025,pending,rabia.khan98@example.com,no
+t05099,c1099,saad raza,53.0,female,islamabad,home & living,6.0,51.77,310.62,mobile wallet,4/15/2025,cancelled,saad.raza99@example.com,yes
+t05100,c1100,naveed malik,47.0,female,peshawar,beauty,3.0,51.91,155.73,bank transfer,5/20/2025,cancelled,naveed.malik100@example.com,yes
+t05101,c1101,omar butt,31.0,male,abbottabad,electronics,6.0,101.75,610.5,cash,1/13/2025,cancelled,omar.butt101@example.com,yes
+t05102,c1102,hassan anwar,55.0,female,,beauty,5.0,99.56,497.8,card,3/1/2025,cancelled,hassan.anwar102@example.com,yes
+t05103,c1103,zara ahmed,36.0,male,islamabad,books,3.0,360.94,1082.82,cash,1/7/2025,pending,zara.ahmed103@example.com,yes
+t05104,c1104,naveed anwar,34.0,female,lahore,groceries,3.0,31.16,93.48,mobile wallet,5/15/2025,delivered,naveed.anwar104@example.com,yes
+t05105,c1105,sana siddiqui,42.0,male,abbottabad,books,2.0,425.87,851.74,cash,5/14/2025,cancelled,sana.siddiqui105@example.com,no
+t05106,c1106,ali ahmed,49.0,male,rawalpindi,sports,1.0,224.7,224.7,mobile wallet,1/19/2025,,ali.ahmed106@example.com,no
+t05107,c1107,zara shah,23.0,male,multan,books,6.0,266.73,1600.38,bank transfer,4/8/2025,in transit,zara.shah107@example.com,no
+t05108,c1108,saad noor,57.0,female,karachi,beauty,6.0,58.57,351.42,card,4/21/2025,returned,saad.noor108@example.com,yes
+t05109,c1109,rabia raza,48.0,female,rawalpindi,sports,1.0,146.15,146.15,bank transfer,3/7/2025,cancelled,rabia.raza109@example.com,yes
+t05110,c1110,sana khan,24.0,male,karachi,home & living,1.0,337.11,337.11,bank transfer,2/3/2025,in transit,sana.khan110@example.com,yes
+t05111,c1111,waqas noor,54.0,female,karachi,home & living,3.0,394.13,1182.39,mobile wallet,1/14/2025,cancelled,waqas.noor111@example.com,no
+t05112,c1112,naveed khan,55.0,male,islamabad,sports,4.0,107.12,428.48,cash,3/31/2025,in transit,naveed.khan112@example.com,no
+t05113,c1113,fatima anwar,36.0,male,rawalpindi,beauty,5.0,438.75,2193.75,cash,3/10/2025,delivered,fatima.anwar113@example.com,yes
+t05114,c1114,junaid farooq,38.0,female,faisalabad,electronics,2.0,392.48,784.96,mobile wallet,1/18/2025,pending,junaid.farooq114@example.com,yes
+t05115,c1115,bilal farooq,52.0,male,rawalpindi,home & living,4.0,158.68,634.72,bank transfer,3/21/2025,cancelled,bilal.farooq115@example.com,yes
+t05116,c1116,ayesha shah,29.0,male,karachi,clothing,4.0,300.58,1202.32,mobile wallet,4/24/2025,returned,ayesha.shah116@example.com,no
+t05117,c1117,imran anwar,51.0,male,faisalabad,home & living,1.0,133.19,133.19,mobile wallet,5/15/2025,cancelled,imran.anwar117@example.com,yes
+t05118,c1118,iqra hussain,57.0,male,lahore,groceries,3.0,425.83,1277.49,card,3/7/2025,cancelled,iqra.hussain118@example.com,no
+t05119,c1119,fatima ahmed,50.0,female,islamabad,groceries,4.0,243.4,973.6,card,5/9/2025,in transit,fatima.ahmed119@example.com,no
+t05120,c1120,bilal hussain,21.0,female,lahore,home & living,1.0,389.05,389.05,mobile wallet,14-apr-25,returned,bilal.hussain120@example.com,no
+t05004,c1004,fatima raza,41.0,female,lahore,sports,4.0,245.01,980.04,mobile wallet,1/21/2025,in transit,fatima.raza4@example.com,no
+t05016,c1016,kiran hussain,42.0,female,mardan,home & living,3.0,117.57,352.71,,3/28/2025,delivered,kiran.hussain16@example.com,yes
+t05028,c1028,uzma farooq,38.0,male,mardan,clothing,6.0,53.79,322.74,card,3/9/2025,delivered,uzma.farooq28@example.com,yes
+t05069,c1069,zara farooq,25.0,male,peshawar,clothing,6.0,43.88,263.28,card,2/14/2025,in transit,zara.farooq69@example.com,yes

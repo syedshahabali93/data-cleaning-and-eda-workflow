@@ -1,0 +1,18 @@
+{
+    "validation_errors": [],
+    "invalid_rows_count": 6,
+    "metrics": {
+        "start_shape": [
+            126,
+            15
+        ],
+        "final_shape": [
+            118,
+            15
+        ],
+        "start_rows": 126,
+        "final_rows": 118,
+        "rows_removed_total": 8,
+        "duplicates_removed": 8
+    }
+}

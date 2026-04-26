@@ -1,0 +1,14 @@
+
+================ DATA QUALITY REPORT ================
+
+START SHAPE: (126, 15)
+FINAL SHAPE: (118, 15)
+
+ROWS REMOVED TOTAL: 8
+DUPLICATES REMOVED: 8
+
+DATA QUALITY SCORE: 95.69/100
+
+PLOTS LOCATION: plots/
+
+=====================================================
