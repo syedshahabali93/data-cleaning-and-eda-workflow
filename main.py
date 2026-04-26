@@ -27,6 +27,7 @@ import numpy as np
 import logging
 import json
 import os
+import sqlite3
 
 import matplotlib
 matplotlib.use("TkAgg")  # Fixes plotting issues in PyCharm
@@ -42,6 +43,7 @@ INPUT_FILE = "customer_transactions_dirty_dataset.csv"
 OUTPUT_FILE = "customer_transactions_cleaned_dataset.csv"
 BAD_RECORDS_FILE = "bad_records.csv"
 AUDIT_LOG_FILE = "audit_log.json"
+DB_FILE = "customer_transactions.db"
 
 # Directory for generated plots
 PLOT_DIR = "plots"
@@ -59,6 +61,93 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
+
+
+# =========================================================
+# SQLITE MANAGER
+# =========================================================
+class SQLiteManager:
+
+    def __init__(self, db_file):
+        self.conn = sqlite3.connect(db_file)
+        self.cursor = self.conn.cursor()
+        self.create_tables()
+
+    def create_tables(self):
+
+        self.cursor.execute("""
+        CREATE TABLE IF NOT EXISTS cleaned_transactions (
+            transaction_id INTEGER,
+            customer_id TEXT,
+            quantity REAL,
+            unit_price REAL,
+            transaction_amount REAL
+        )
+        """)
+
+        self.cursor.execute("""
+        CREATE TABLE IF NOT EXISTS bad_records (
+            transaction_id TEXT,
+            customer_id TEXT,
+            quantity TEXT,
+            unit_price TEXT,
+            reason TEXT
+        )
+        """)
+
+        self.cursor.execute("""
+        CREATE TABLE IF NOT EXISTS audit_log (
+            event TEXT,
+            details TEXT
+        )
+        """)
+
+        self.conn.commit()
+
+    def insert_cleaned_data(self, df):
+        expected_cols = [
+            "transaction_id",
+            "customer_id",
+            "quantity",
+            "unit_price",
+            "transaction_amount"
+        ]
+
+        df = df[expected_cols]
+        df.to_sql("cleaned_transactions", self.conn, if_exists="append", index=False)
+
+    def insert_bad_records(self, df):
+        if df is not None and not df.empty:
+            df = df.copy()
+
+            # Ensure only DB columns exist
+            df = df.loc[:, ~df.columns.duplicated()]  # remove duplicates safely
+
+            # Keep only relevant columns if they exist
+            keep_cols = ["transaction_id", "customer_id", "quantity", "unit_price"]
+            available_cols = [c for c in keep_cols if c in df.columns]
+
+            df = df[available_cols]
+
+            # Add reason column (MANDATORY for DB schema)
+            df["reason"] = "validation_failure"
+
+            df.to_sql(
+                "bad_records",
+                self.conn,
+                if_exists="append",
+                index=False
+            )
+
+    def insert_audit_log(self, report_dict):
+        self.cursor.execute(
+            "INSERT INTO audit_log (event, details) VALUES (?, ?)",
+            ("ETL_RUN", json.dumps(report_dict))
+        )
+        self.conn.commit()
+
+    def close(self):
+        self.conn.close()
 
 
 # =========================================================
@@ -461,11 +550,18 @@ class DataPipeline:
 
         return df
 
+    def save_to_db(self, df, db):
+        db.insert_cleaned_data(df)
+        db.insert_bad_records(self.error_report.invalid_rows)
+        db.insert_audit_log(self.error_report.to_dict())
 
 # =========================================================
 #   MAIN EXECUTION
 # =========================================================
 if __name__ == "__main__":
+
+    # INIT DB
+    db = SQLiteManager(DB_FILE)
 
     # Load data
     source = CSVDataSource(INPUT_FILE)
@@ -486,6 +582,8 @@ if __name__ == "__main__":
     # Run pipeline
     cleaned_df = pipeline.run(df)
 
+    pipeline.save_to_db(cleaned_df, db)
+
     # Save outputs
     cleaned_df.to_csv(OUTPUT_FILE, index=False)
     pipeline.error_report.invalid_rows.to_csv(BAD_RECORDS_FILE, index=False)
@@ -494,6 +592,9 @@ if __name__ == "__main__":
 
     # Run EDA
     EDA().run(cleaned_df)
+
+    # CLOSE DB
+    db.close()
 
     # Compute data quality score
     scorer = DataQualityScorer()
