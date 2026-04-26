@@ -37,7 +37,7 @@ The goal is to identify and fix common data quality issues such as missing value
 
 ---
 
-## 🔄 Workflow
+##   Workflow
 1. **Data Loading**
    - Load raw CSV dataset using Pandas
 
@@ -78,7 +78,7 @@ pip install pandas numpy
 python etl_pipeline.py
 ```
 ---
-## 📈 Output
+##   Output
 
 After execution:
 
