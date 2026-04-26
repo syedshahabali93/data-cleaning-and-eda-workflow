@@ -1,0 +1,447 @@
+2026-04-25 23:35:41,709 [INFO] Starting data cleaning pipeline...
+2026-04-25 23:35:41,712 [INFO] Raw data shape: (126, 15)
+2026-04-25 23:35:41,712 [INFO] Initialized BaseCleaner with dataframe shape: (126, 15)
+2026-04-25 23:35:41,714 [INFO] Column names standardized
+2026-04-25 23:35:41,716 [INFO] Removed 1 duplicate rows
+2026-04-25 23:35:41,722 [INFO] Whitespace stripped from string columns
+2026-04-25 23:35:41,728 [INFO] Filled 2 missing transaction amounts
+2026-04-25 23:35:41,733 [INFO] Missing values handled
+2026-04-25 23:35:41,736 [INFO] Removed 1 duplicate rows
+2026-04-25 23:35:41,738 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:35:41,745 [INFO] Null value report:
+transaction_id        0
+customer_id           0
+customer_name         0
+age                   0
+gender                0
+city                  0
+product_category      0
+quantity              0
+unit_price            0
+transaction_amount    0
+payment_method        0
+transaction_date      0
+delivery_status       0
+email_address         0
+loyalty_member        0
+dtype: int64
+2026-04-25 23:35:41,746 [INFO] Final dataframe shape: (124, 15)
+2026-04-25 23:35:41,746 [INFO] Cleaning pipeline completed successfully
+2026-04-25 23:35:41,752 [INFO] Cleaned data saved to cleaned_data.csv
+2026-04-25 23:38:22,220 [INFO] Starting pipeline
+2026-04-25 23:38:22,224 [INFO] Raw shape: (126, 15)
+2026-04-25 23:38:22,224 [INFO] Initialized cleaner | shape=(126, 15)
+2026-04-25 23:38:22,227 [INFO] Columns standardized
+2026-04-25 23:38:22,227 [DEBUG] Columns: ['transaction_id', 'customer_id', 'customer_name', 'age', 'gender', 'city', 'product_category', 'quantity', 'unit_price', 'transaction_amount', 'payment_method', 'transaction_date', 'delivery_status', 'email_address', 'loyalty_member']
+2026-04-25 23:38:22,231 [INFO] Duplicates removed: 1
+2026-04-25 23:38:22,237 [INFO] Whitespace stripped
+2026-04-25 23:38:22,239 [DEBUG] Gender before: <StringArray>
+['Male', 'Female', 'FEMALE', 'male', 'female', 'M', 'f', 'F']
+Length: 8, dtype: string
+2026-04-25 23:38:22,240 [DEBUG] Gender after: <StringArray>
+['Male', 'Female']
+Length: 2, dtype: str
+2026-04-25 23:38:22,242 [DEBUG] Product category before: <StringArray>
+[      'Groceries',        'Clothing',          'Sports',     'Electronics',
+   'Home & Living',          'Beauty',           'Books',          'beauty',
+        'clothing', 'home and living']
+Length: 10, dtype: string
+2026-04-25 23:38:22,242 [DEBUG] Product category after: <StringArray>
+[    'Groceries',      'Clothing',        'Sports',   'Electronics',
+ 'Home & Living',        'Beauty',         'Books']
+Length: 7, dtype: str
+2026-04-25 23:38:22,247 [DEBUG] Quantity stats:
+count    125.000000
+mean       3.496000
+std        1.730299
+min        1.000000
+25%        2.000000
+50%        4.000000
+75%        5.000000
+max        6.000000
+Name: quantity, dtype: float64
+2026-04-25 23:38:22,251 [DEBUG] Price stats:
+count    125.000000
+mean     234.233200
+std      136.785526
+min       22.750000
+25%      107.120000
+50%      243.400000
+75%      376.890000
+max      445.370000
+Name: unit_price, dtype: float64
+2026-04-25 23:38:22,253 [INFO] Filled missing transaction_amount: 2
+2026-04-25 23:38:22,255 [DEBUG] Date nulls: 0
+2026-04-25 23:38:22,256 [INFO] Missing values handled
+2026-04-25 23:38:22,257 [INFO] Duplicates removed: 1
+2026-04-25 23:38:22,258 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:38:22,259 [DEBUG] Sample mismatches:
+     quantity  unit_price  transaction_amount
+64          4      252.58              252.58
+71          5      312.40             1249.60
+82          1      319.71             1278.84
+87          6      258.14             1032.56
+121         3      117.57              117.57
+2026-04-25 23:38:22,266 [INFO] Null report:
+transaction_id        0
+customer_id           0
+customer_name         0
+age                   0
+gender                0
+city                  0
+product_category      0
+quantity              0
+unit_price            0
+transaction_amount    0
+payment_method        0
+transaction_date      0
+delivery_status       0
+email_address         0
+loyalty_member        0
+dtype: int64
+2026-04-25 23:38:22,267 [INFO] Final shape: (124, 15)
+2026-04-25 23:38:22,267 [INFO] Pipeline completed
+2026-04-25 23:38:22,270 [INFO] Saved cleaned_data.csv
+2026-04-25 23:41:40,111 [INFO] Starting pipeline
+2026-04-25 23:41:40,113 [INFO] File loaded successfully | shape=(126, 15)
+2026-04-25 23:41:40,113 [INFO] Initialized cleaner | shape=(126, 15)
+2026-04-25 23:41:40,114 [INFO] Columns standardized
+2026-04-25 23:41:40,115 [INFO] Duplicates removed: 1
+2026-04-25 23:41:40,118 [INFO] String trimming completed
+2026-04-25 23:41:40,122 [INFO] Filled transaction amounts: 2
+2026-04-25 23:41:40,124 [INFO] Duplicates removed: 0
+2026-04-25 23:41:40,125 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:41:40,125 [INFO] Null report:
+transaction_id        0
+customer_id           0
+customer_name         0
+age                   0
+gender                0
+city                  0
+product_category      0
+quantity              0
+unit_price            0
+transaction_amount    0
+payment_method        0
+transaction_date      0
+delivery_status       0
+email_address         0
+loyalty_member        0
+dtype: int64
+2026-04-25 23:41:40,126 [INFO] Final shape: (125, 15)
+2026-04-25 23:41:40,128 [INFO] Pipeline completed successfully
+2026-04-25 23:49:26,112 [INFO] Starting pipeline
+2026-04-25 23:49:26,114 [INFO] File loaded successfully | shape=(126, 15)
+2026-04-25 23:49:26,115 [INFO] Initialized cleaner | shape=(126, 15)
+2026-04-25 23:49:26,116 [INFO] Columns standardized
+2026-04-25 23:49:26,118 [INFO] Duplicates removed: 1
+2026-04-25 23:49:26,121 [INFO] String trimming completed
+2026-04-25 23:49:26,126 [INFO] Filled transaction amounts: 2
+2026-04-25 23:49:26,128 [INFO] Duplicates removed: 0
+2026-04-25 23:49:26,129 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:49:26,130 [INFO] Null report:
+transaction_id        0
+customer_id           0
+customer_name         0
+age                   0
+gender                0
+city                  0
+product_category      0
+quantity              0
+unit_price            0
+transaction_amount    0
+payment_method        0
+transaction_date      0
+delivery_status       0
+email_address         0
+loyalty_member        0
+dtype: int64
+2026-04-25 23:49:26,131 [INFO] Final shape: (125, 15)
+2026-04-25 23:49:26,133 [INFO] Pipeline completed successfully
+2026-04-25 23:55:14,273 [INFO] Starting pipeline
+2026-04-25 23:55:14,277 [INFO] File loaded successfully | shape=(126, 15)
+2026-04-25 23:55:14,277 [INFO] Initialized cleaner | shape=(126, 15)
+2026-04-25 23:55:14,279 [INFO] Columns standardized
+2026-04-25 23:55:14,283 [INFO] Duplicates removed: 1
+2026-04-25 23:55:14,290 [INFO] String trimming completed
+2026-04-25 23:55:14,298 [INFO] Filled transaction amounts: 2
+2026-04-25 23:55:14,301 [INFO] Duplicates removed: 0
+2026-04-25 23:55:14,302 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:55:14,303 [INFO] Null report:
+transaction_id        0
+customer_id           0
+customer_name         0
+age                   0
+gender                0
+city                  0
+product_category      0
+quantity              0
+unit_price            0
+transaction_amount    0
+payment_method        0
+transaction_date      0
+delivery_status       0
+email_address         0
+loyalty_member        0
+dtype: int64
+2026-04-25 23:55:14,304 [INFO] Final shape: (125, 15)
+2026-04-25 23:55:14,309 [INFO] Pipeline completed successfully
+2026-04-25 23:56:37,391 [INFO] Starting pipeline
+2026-04-25 23:56:37,395 [INFO] File loaded successfully | shape=(126, 15)
+2026-04-25 23:56:37,396 [INFO] Initialized cleaner | shape=(126, 15)
+2026-04-25 23:56:37,398 [INFO] Columns standardized
+2026-04-25 23:56:37,401 [INFO] Duplicates removed: 1
+2026-04-25 23:56:37,406 [INFO] String trimming completed
+2026-04-25 23:56:37,414 [INFO] Filled transaction amounts: 2
+2026-04-25 23:56:37,417 [INFO] Duplicates removed: 0
+2026-04-25 23:56:37,419 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:56:37,420 [INFO] Null report:
+transaction_id        0
+customer_id           0
+customer_name         0
+age                   0
+gender                0
+city                  0
+product_category      0
+quantity              0
+unit_price            0
+transaction_amount    0
+payment_method        0
+transaction_date      0
+delivery_status       0
+email_address         0
+loyalty_member        0
+dtype: int64
+2026-04-25 23:56:37,421 [INFO] Final shape: (125, 15)
+2026-04-25 23:56:37,421 [INFO] Final row count before saving: 125
+2026-04-25 23:56:37,425 [INFO] Pipeline completed successfully
+2026-04-25 23:57:50,820 [INFO] Loading dataset...
+2026-04-25 23:57:50,824 [INFO] Raw shape: (126, 15)
+2026-04-25 23:57:50,825 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-25 23:57:50,868 [INFO] Duplicates removed: 1
+2026-04-25 23:57:50,876 [INFO] Filled transaction_amount rows: 2
+2026-04-25 23:57:50,881 [INFO] Duplicates removed: 0
+2026-04-25 23:57:50,882 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:57:50,882 [INFO] Final row count before saving: 125
+2026-04-25 23:57:50,882 [INFO] Final shape before saving: (125, 15)
+2026-04-25 23:57:50,886 [INFO] Saved cleaned_data.csv successfully
+2026-04-25 23:58:40,814 [INFO] Loading dataset...
+2026-04-25 23:58:40,817 [INFO] Raw shape: (126, 15)
+2026-04-25 23:58:40,818 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-25 23:58:40,819 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-25 23:58:40,822 [INFO] Duplicates removed: 1
+2026-04-25 23:58:40,822 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-25 23:58:40,822 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-25 23:58:40,823 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-25 23:58:40,825 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-25 23:58:40,826 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-25 23:58:40,828 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-25 23:58:40,829 [INFO] Filled transaction_amount rows: 2
+2026-04-25 23:58:40,830 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-25 23:58:40,832 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-25 23:58:40,833 [INFO] Duplicates removed: 0
+2026-04-25 23:58:40,833 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-25 23:58:40,835 [WARNING] Mismatched transaction amounts: 5
+2026-04-25 23:58:40,835 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-25 23:58:40,835 [INFO] Final row count before saving: 125
+2026-04-25 23:58:40,835 [INFO] Final shape before saving: (125, 15)
+2026-04-25 23:58:40,838 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:00:41,009 [INFO] Loading dataset...
+2026-04-26 00:00:41,013 [INFO] Raw shape: (126, 15)
+2026-04-26 00:00:41,014 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:00:41,015 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-26 00:00:41,018 [INFO] Duplicates removed: 1
+2026-04-26 00:00:41,018 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:00:41,018 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-26 00:00:41,020 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-26 00:00:41,022 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-26 00:00:41,024 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-26 00:00:41,027 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-26 00:00:41,029 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:00:41,029 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-26 00:00:41,031 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-26 00:00:41,033 [INFO] Duplicates removed: 0
+2026-04-26 00:00:41,033 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:00:41,034 [WARNING] Mismatched transaction amounts: 5
+2026-04-26 00:00:41,034 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-26 00:00:41,034 [INFO] Final row count before saving: 125
+2026-04-26 00:00:41,034 [INFO] Final shape before saving: (125, 15)
+2026-04-26 00:00:41,054 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:01:36,357 [INFO] Loading dataset...
+2026-04-26 00:01:36,359 [INFO] Raw shape: (126, 15)
+2026-04-26 00:01:36,360 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:01:36,361 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-26 00:01:36,363 [INFO] Duplicates removed: 1
+2026-04-26 00:01:36,363 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:01:36,364 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-26 00:01:36,364 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-26 00:01:36,365 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-26 00:01:36,366 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-26 00:01:36,367 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-26 00:01:36,368 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:01:36,368 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-26 00:01:36,369 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-26 00:01:36,371 [INFO] Duplicates removed: 0
+2026-04-26 00:01:36,371 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:01:36,373 [WARNING] Mismatched transaction amounts: 5
+2026-04-26 00:01:36,373 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-26 00:01:36,373 [INFO] Final row count before saving: 125
+2026-04-26 00:01:36,373 [INFO] Final shape before saving: (125, 15)
+2026-04-26 00:01:36,394 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:14:36,701 [INFO] Loading dataset...
+2026-04-26 00:14:36,705 [INFO] Raw shape: (126, 15)
+2026-04-26 00:14:36,705 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:14:36,706 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-26 00:14:36,709 [INFO] Duplicates removed: 1
+2026-04-26 00:14:36,709 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:14:36,709 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-26 00:14:36,711 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-26 00:14:36,712 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-26 00:14:36,713 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-26 00:14:36,715 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-26 00:14:36,716 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:14:36,717 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-26 00:14:36,718 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-26 00:14:36,720 [INFO] Duplicates removed: 0
+2026-04-26 00:14:36,720 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:14:36,721 [WARNING] Mismatched transaction amounts: 5
+2026-04-26 00:14:36,721 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-26 00:14:36,721 [INFO] Final row count before saving: 125
+2026-04-26 00:14:36,721 [INFO] Final shape before saving: (125, 15)
+2026-04-26 00:14:36,725 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:15:17,524 [INFO] Loading dataset...
+2026-04-26 00:15:17,527 [INFO] Raw shape: (126, 15)
+2026-04-26 00:15:17,527 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:15:17,529 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-26 00:15:17,532 [INFO] Duplicates removed: 1
+2026-04-26 00:15:17,532 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:15:17,532 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-26 00:15:17,534 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-26 00:15:17,535 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-26 00:15:17,536 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-26 00:15:17,538 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-26 00:15:17,539 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:15:17,539 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-26 00:15:17,541 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-26 00:15:17,542 [INFO] Duplicates removed: 0
+2026-04-26 00:15:17,542 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:15:17,543 [WARNING] Mismatched transaction amounts: 5
+2026-04-26 00:15:17,544 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-26 00:15:17,544 [INFO] Final row count before saving: 125
+2026-04-26 00:15:17,544 [INFO] Final shape before saving: (125, 15)
+2026-04-26 00:15:17,564 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:17:16,636 [INFO] Loading dataset...
+2026-04-26 00:17:16,641 [INFO] Raw shape: (126, 15)
+2026-04-26 00:17:16,641 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:17:16,644 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-26 00:17:16,647 [INFO] Duplicates removed: 1
+2026-04-26 00:17:16,647 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:17:16,648 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-26 00:17:16,650 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-26 00:17:16,651 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-26 00:17:16,652 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-26 00:17:16,655 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-26 00:17:16,657 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:17:16,658 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-26 00:17:16,660 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-26 00:17:16,662 [INFO] Duplicates removed: 0
+2026-04-26 00:17:16,663 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:17:16,664 [WARNING] Mismatched transaction amounts: 5
+2026-04-26 00:17:16,665 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-26 00:17:16,665 [INFO] Final row count before saving: 125
+2026-04-26 00:17:16,665 [INFO] Final shape before saving: (125, 15)
+2026-04-26 00:17:16,669 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:17:31,921 [INFO] Loading dataset...
+2026-04-26 00:17:31,927 [INFO] Raw shape: (126, 15)
+2026-04-26 00:17:31,927 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:17:31,930 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-26 00:17:31,934 [INFO] Duplicates removed: 1
+2026-04-26 00:17:31,934 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:17:31,934 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-26 00:17:31,935 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-26 00:17:31,937 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-26 00:17:31,938 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-26 00:17:31,940 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-26 00:17:31,942 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:17:31,942 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-26 00:17:31,944 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-26 00:17:31,947 [INFO] Duplicates removed: 0
+2026-04-26 00:17:31,947 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:17:31,948 [WARNING] Mismatched transaction amounts: 5
+2026-04-26 00:17:31,948 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-26 00:17:31,948 [INFO] Final row count before saving: 125
+2026-04-26 00:17:31,948 [INFO] Final shape before saving: (125, 15)
+2026-04-26 00:17:31,977 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:19:27,688 [INFO] Loading dataset...
+2026-04-26 00:19:27,692 [INFO] Raw shape: (126, 15)
+2026-04-26 00:19:27,692 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:19:27,694 [INFO] After standardize_columns       -> shape: (126, 15)
+2026-04-26 00:19:27,697 [INFO] Duplicates removed: 1
+2026-04-26 00:19:27,697 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:19:27,697 [INFO] After strip_strings             -> shape: (125, 15)
+2026-04-26 00:19:27,698 [INFO] After clean_gender              -> shape: (125, 15)
+2026-04-26 00:19:27,700 [INFO] After clean_quantity            -> shape: (125, 15)
+2026-04-26 00:19:27,701 [INFO] After clean_currency            -> shape: (125, 15)
+2026-04-26 00:19:27,702 [INFO] After clean_dates               -> shape: (125, 15)
+2026-04-26 00:19:27,704 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:19:27,704 [INFO] After fill_transaction_amount   -> shape: (125, 15)
+2026-04-26 00:19:27,707 [INFO] After fill_missing              -> shape: (125, 15)
+2026-04-26 00:19:27,709 [INFO] Duplicates removed: 0
+2026-04-26 00:19:27,709 [INFO] After remove_duplicates         -> shape: (125, 15)
+2026-04-26 00:19:27,710 [WARNING] Mismatched transaction amounts: 5
+2026-04-26 00:19:27,710 [INFO] After validate_amounts          -> shape: (125, 15)
+2026-04-26 00:19:27,710 [INFO] Final row count before saving: 125
+2026-04-26 00:19:27,710 [INFO] Final shape before saving: (125, 15)
+2026-04-26 00:19:27,732 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:23:33,658 [INFO] Loading dataset...
+2026-04-26 00:23:33,661 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:23:33,662 [INFO] After standardize_columns            -> shape: (126, 15)
+2026-04-26 00:23:33,671 [INFO] Duplicates removed: 6
+2026-04-26 00:23:33,671 [INFO] After remove_duplicates              -> shape: (120, 15)
+2026-04-26 00:23:33,676 [INFO] After strip_strings                  -> shape: (120, 15)
+2026-04-26 00:23:33,678 [INFO] After clean_gender                   -> shape: (120, 15)
+2026-04-26 00:23:33,679 [INFO] After clean_loyalty                  -> shape: (120, 15)
+2026-04-26 00:23:33,680 [INFO] After clean_city                     -> shape: (120, 15)
+2026-04-26 00:23:33,681 [INFO] After clean_product_category         -> shape: (120, 15)
+2026-04-26 00:23:33,681 [INFO] After clean_status_fields            -> shape: (120, 15)
+2026-04-26 00:23:33,682 [INFO] After clean_quantity                 -> shape: (120, 15)
+2026-04-26 00:23:33,683 [INFO] After clean_currency                 -> shape: (120, 15)
+2026-04-26 00:23:33,684 [INFO] After clean_age                      -> shape: (120, 15)
+2026-04-26 00:23:33,685 [INFO] After clean_dates                    -> shape: (120, 15)
+2026-04-26 00:23:33,687 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:23:33,688 [INFO] After fill_transaction_amount        -> shape: (120, 15)
+2026-04-26 00:23:33,689 [INFO] After fill_missing                   -> shape: (120, 15)
+2026-04-26 00:23:33,689 [INFO] Duplicates removed: 0
+2026-04-26 00:23:33,689 [INFO] After remove_duplicates              -> shape: (120, 15)
+2026-04-26 00:23:33,691 [WARNING] Mismatched transaction amounts: 4
+2026-04-26 00:23:33,692 [WARNING] Invalid quantities: 0
+2026-04-26 00:23:33,692 [WARNING] Invalid unit prices: 0
+2026-04-26 00:23:33,692 [INFO] After validate                       -> shape: (120, 15)
+2026-04-26 00:23:33,692 [INFO] Final shape: (120, 15)
+2026-04-26 00:23:33,709 [INFO] Saved cleaned_data.csv successfully
+2026-04-26 00:23:58,003 [INFO] Loading dataset...
+2026-04-26 00:23:58,009 [INFO] Pipeline started | initial shape: (126, 15)
+2026-04-26 00:23:58,011 [INFO] After standardize_columns            -> shape: (126, 15)
+2026-04-26 00:23:58,012 [INFO] Duplicates removed: 6
+2026-04-26 00:23:58,013 [INFO] After remove_duplicates              -> shape: (120, 15)
+2026-04-26 00:23:58,017 [INFO] After strip_strings                  -> shape: (120, 15)
+2026-04-26 00:23:58,018 [INFO] After clean_gender                   -> shape: (120, 15)
+2026-04-26 00:23:58,019 [INFO] After clean_loyalty                  -> shape: (120, 15)
+2026-04-26 00:23:58,020 [INFO] After clean_city                     -> shape: (120, 15)
+2026-04-26 00:23:58,022 [INFO] After clean_product_category         -> shape: (120, 15)
+2026-04-26 00:23:58,023 [INFO] After clean_status_fields            -> shape: (120, 15)
+2026-04-26 00:23:58,026 [INFO] After clean_quantity                 -> shape: (120, 15)
+2026-04-26 00:23:58,028 [INFO] After clean_currency                 -> shape: (120, 15)
+2026-04-26 00:23:58,028 [INFO] After clean_age                      -> shape: (120, 15)
+2026-04-26 00:23:58,031 [INFO] After clean_dates                    -> shape: (120, 15)
+2026-04-26 00:23:58,034 [INFO] Filled transaction_amount rows: 2
+2026-04-26 00:23:58,034 [INFO] After fill_transaction_amount        -> shape: (120, 15)
+2026-04-26 00:23:58,037 [INFO] After fill_missing                   -> shape: (120, 15)
+2026-04-26 00:23:58,038 [INFO] Duplicates removed: 0
+2026-04-26 00:23:58,039 [INFO] After remove_duplicates              -> shape: (120, 15)
+2026-04-26 00:23:58,041 [WARNING] Mismatched transaction amounts: 4
+2026-04-26 00:23:58,042 [WARNING] Invalid quantities: 0
+2026-04-26 00:23:58,042 [WARNING] Invalid unit prices: 0
+2026-04-26 00:23:58,042 [INFO] After validate                       -> shape: (120, 15)
+2026-04-26 00:23:58,042 [INFO] Final shape: (120, 15)
+2026-04-26 00:23:58,085 [INFO] Saved cleaned_data.csv successfully
