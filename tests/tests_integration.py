@@ -19,7 +19,9 @@ def test_full_pipeline():
         "customer_id": ["A", "B", "B"],
         "quantity": [2, 3, -1],
         "unit_price": [10, 5, 5],
-        "transaction_amount": [20, 15, -5]
+        "transaction_amount": [20, 15, -5],
+        "gender": ["m", "f", "m"],
+        "product_category": ["electronics", "clothing", "clothing"]
     })
 
     transformers = [

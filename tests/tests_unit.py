@@ -20,7 +20,8 @@ def sample_df():
         "quantity": ["2", "2", "-1"],
         "unit_price": ["10", "10", "5"],
         "transaction_amount": [20, 20, -5],
-        "gender": ["M", "F", "m"]
+        "gender": ["M", "F", "m"],
+        "product_category": ["electronics", "electronics", "clothing"]
     })
 
 
@@ -84,7 +85,7 @@ def test_drop_invalid_rows():
     df = pd.DataFrame({
         "transaction_id": [1, 1, 2],
         "customer_id": ["A", "A", "B"],
-        "quantity": [2, 2, -1],   # ✅ numeric
+        "quantity": [2, 2, -1],
         "unit_price": [10, 10, 5]
     })
 
